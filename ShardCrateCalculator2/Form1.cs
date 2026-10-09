@@ -28,6 +28,7 @@ namespace ShardCrateCalculator2
                 while (first)
                 {
                     whatTypeLabel.Text = "How many shards do you have?";
+                    enterBtn.Text = "Enter";
                     uptieLbl.Enabled = false;
                     uptiePic.Enabled = false;
                     twoStarLbl.Enabled = false;
@@ -48,7 +49,53 @@ namespace ShardCrateCalculator2
                     realShardsTxt.Enabled = true;
                     enterMode = true;
                 }
+                while (seccond)
+                {
+                    int open;
+                    enterMode = false;
+                    enterBtn.Text = "Continue";
+                    whatTypeLabel.Text = "Press Continue to open more";
+                    realShardsTxt.Enabled = false;
+                    luckyLbl.Enabled = true;
+                    luckyNumLbl.Enabled = true;
+                    luckyPic.Enabled = true;
+                    midLbl.Enabled = true;
+                    midNumLbl.Enabled = true;
+                    midPic.Enabled = true;
+                    unluckyLbl.Enabled = true;
+                    unluckyNumLbl.Enabled = true;
+                    unluckyPic.Enabled = true;
+                    open = goal - real;
+                    unluckyNumLbl.Text = open.ToString();
+                    open = (goal - real) / 2;
+                    midNumLbl.Text = open.ToString();
+                    open = (goal - real) / 3;
+                    luckyNumLbl.Text = open.ToString();
+                }
             }
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            whatTypeLabel.Text = "What are you sharding?";
+            luckyLbl.Enabled = false;
+            luckyNumLbl.Enabled = false;
+            luckyPic.Enabled = false;
+            midLbl.Enabled = false;
+            midNumLbl.Enabled = false;
+            midPic.Enabled = false;
+            unluckyLbl.Enabled = false;
+            unluckyNumLbl.Enabled = false;
+            unluckyPic.Enabled = false;
+            enterBtn.Enabled = false;
+            exitBtn.Enabled = false;
+            realShardsTxt.Enabled = false;
+            uptieLbl.Enabled = true;
+            uptiePic.Enabled = true;
+            twoStarLbl.Enabled = true;
+            twoStarPic.Enabled = true;
+            threeStarLbl.Enabled = true;
+            threeStarPic.Enabled = true;
         }
 
         private void threeStarPic_Click(object sender, EventArgs e)
@@ -79,8 +126,14 @@ namespace ShardCrateCalculator2
                 }
                 else
                 {
-
+                    seccond = true;
+                    first = false;
                 }
+            }
+            else
+            {
+                first = true;
+                seccond = false;
             }
         }
     }
