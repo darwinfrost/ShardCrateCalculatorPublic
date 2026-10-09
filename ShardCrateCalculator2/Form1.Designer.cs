@@ -69,8 +69,7 @@
             // 
             // uptieLbl
             // 
-            this.uptieLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uptieLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uptieLbl.AutoSize = true;
             this.uptieLbl.Font = new System.Drawing.Font("SimSun-ExtG", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uptieLbl.Location = new System.Drawing.Point(163, 364);
@@ -78,11 +77,11 @@
             this.uptieLbl.Size = new System.Drawing.Size(82, 28);
             this.uptieLbl.TabIndex = 1;
             this.uptieLbl.Text = "Uptie";
+            this.uptieLbl.Click += new System.EventHandler(this.uptieLbl_Click);
             // 
             // twoStarLbl
             // 
-            this.twoStarLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.twoStarLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.twoStarLbl.AutoSize = true;
             this.twoStarLbl.Font = new System.Drawing.Font("SimSun-ExtG", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.twoStarLbl.Location = new System.Drawing.Point(417, 364);
@@ -90,11 +89,11 @@
             this.twoStarLbl.Size = new System.Drawing.Size(40, 28);
             this.twoStarLbl.TabIndex = 2;
             this.twoStarLbl.Text = "00";
+            this.twoStarLbl.Click += new System.EventHandler(this.twoStarLbl_Click);
             // 
             // threeStarLbl
             // 
-            this.threeStarLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.threeStarLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.threeStarLbl.AutoSize = true;
             this.threeStarLbl.Font = new System.Drawing.Font("SimSun-ExtG", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.threeStarLbl.Location = new System.Drawing.Point(587, 364);
@@ -102,6 +101,7 @@
             this.threeStarLbl.Size = new System.Drawing.Size(166, 28);
             this.threeStarLbl.TabIndex = 3;
             this.threeStarLbl.Text = "000 / E.G.O";
+            this.threeStarLbl.Click += new System.EventHandler(this.threeStarLbl_Click);
             // 
             // enterBtn
             // 
@@ -208,7 +208,7 @@
             // 
             // threeStarPic
             // 
-            this.threeStarPic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.threeStarPic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.threeStarPic.Image = global::ShardCrateCalculator2.Properties.Resources.Blind_Obsession_Ishmael_Icon;
             this.threeStarPic.Location = new System.Drawing.Point(592, 173);
             this.threeStarPic.Name = "threeStarPic";
@@ -220,7 +220,7 @@
             // 
             // twoStarPic
             // 
-            this.twoStarPic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.twoStarPic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.twoStarPic.Image = global::ShardCrateCalculator2.Properties.Resources.Los_Mariachis_Jefe_Sinclair_Idle_Sprite;
             this.twoStarPic.Location = new System.Drawing.Point(368, 173);
             this.twoStarPic.Name = "twoStarPic";
@@ -232,7 +232,7 @@
             // 
             // uptiePic
             // 
-            this.uptiePic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.uptiePic.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.uptiePic.Image = global::ShardCrateCalculator2.Properties.Resources.Thread;
             this.uptiePic.Location = new System.Drawing.Point(132, 173);
             this.uptiePic.Name = "uptiePic";

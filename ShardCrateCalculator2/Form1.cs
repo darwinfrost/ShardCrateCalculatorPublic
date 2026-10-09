@@ -83,6 +83,21 @@ namespace ShardCrateCalculator2
             Calculator(50);
         }
 
+        private void uptieLbl_Click(object sender, EventArgs e)
+        {
+            Calculator(50);
+        }
+
+        private void twoStarLbl_Click(object sender, EventArgs e)
+        {
+            Calculator(150);
+        }
+
+        private void threeStarLbl_Click(object sender, EventArgs e)
+        {
+            Calculator(400);
+        }
+
         private void enterBtn_Click(object sender, EventArgs e)
         {
             if (enterMode)
