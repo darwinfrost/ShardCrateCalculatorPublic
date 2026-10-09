@@ -16,17 +16,11 @@ namespace ShardCrateCalculator2
         {
             InitializeComponent();
         }
-        bool running, first, seccond, enterMode;
+        bool enterMode;
         int real, goal;
         public void Calculator(int mode/*What button called the function*/)
         {
             goal = mode;
-            running = true;
-            while (running)
-            {
-                first = true;
-                while (first)
-                {
                     whatTypeLabel.Text = "How many shards do you have?";
                     enterBtn.Text = "Enter";
                     uptieLbl.Enabled = false;
@@ -48,31 +42,7 @@ namespace ShardCrateCalculator2
                     exitBtn.Enabled = true;
                     realShardsTxt.Enabled = true;
                     enterMode = true;
-                }
-                while (seccond)
-                {
-                    int open;
-                    enterMode = false;
-                    enterBtn.Text = "Continue";
-                    whatTypeLabel.Text = "Press Continue to open more";
-                    realShardsTxt.Enabled = false;
-                    luckyLbl.Enabled = true;
-                    luckyNumLbl.Enabled = true;
-                    luckyPic.Enabled = true;
-                    midLbl.Enabled = true;
-                    midNumLbl.Enabled = true;
-                    midPic.Enabled = true;
-                    unluckyLbl.Enabled = true;
-                    unluckyNumLbl.Enabled = true;
-                    unluckyPic.Enabled = true;
-                    open = goal - real;
-                    unluckyNumLbl.Text = open.ToString();
-                    open = (goal - real) / 2;
-                    midNumLbl.Text = open.ToString();
-                    open = (goal - real) / 3;
-                    luckyNumLbl.Text = open.ToString();
-                }
-            }
+            
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -126,14 +96,31 @@ namespace ShardCrateCalculator2
                 }
                 else
                 {
-                    seccond = true;
-                    first = false;
+                    int open;
+                    enterMode = false;
+                    enterBtn.Text = "Continue";
+                    whatTypeLabel.Text = "Press Continue to open more";
+                    realShardsTxt.Enabled = false;
+                    luckyLbl.Enabled = true;
+                    luckyNumLbl.Enabled = true;
+                    luckyPic.Enabled = true;
+                    midLbl.Enabled = true;
+                    midNumLbl.Enabled = true;
+                    midPic.Enabled = true;
+                    unluckyLbl.Enabled = true;
+                    unluckyNumLbl.Enabled = true;
+                    unluckyPic.Enabled = true;
+                    open = goal - real;
+                    unluckyNumLbl.Text = open.ToString();
+                    open = (goal - real) / 2;
+                    midNumLbl.Text = open.ToString();
+                    open = (goal - real) / 3;
+                    luckyNumLbl.Text = open.ToString();
                 }
             }
             else
             {
-                first = true;
-                seccond = false;
+                Calculator(goal);
             }
         }
     }
