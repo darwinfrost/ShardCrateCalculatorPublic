@@ -16,13 +16,15 @@ namespace ShardCrateCalculator2
         {
             InitializeComponent();
         }
-        bool running;
+        bool running, first, seccond, enterMode;
+        int real, goal;
         public void Calculator(int mode/*What button called the function*/)
         {
+            goal = mode;
             running = true;
             while (running)
             {
-                bool first = true;
+                first = true;
                 while (first)
                 {
                     whatTypeLabel.Text = "How many shards do you have?";
@@ -32,10 +34,19 @@ namespace ShardCrateCalculator2
                     twoStarPic.Enabled = false;
                     threeStarLbl.Enabled = false;
                     threeStarPic.Enabled = false;
+                    luckyLbl.Enabled = false;
+                    luckyNumLbl.Enabled = false;
+                    luckyPic.Enabled = false;
+                    midLbl.Enabled = false;
+                    midNumLbl.Enabled = false;
+                    midPic.Enabled = false;
+                    unluckyLbl.Enabled = false;
+                    unluckyNumLbl.Enabled = false;
+                    unluckyPic.Enabled = false;
                     enterBtn.Enabled = true;
                     exitBtn.Enabled = true;
                     realShardsTxt.Enabled = true;
-
+                    enterMode = true;
                 }
             }
         }
@@ -53,6 +64,24 @@ namespace ShardCrateCalculator2
         private void uptiePic_Click(object sender, EventArgs e)
         {
             Calculator(50);
+        }
+
+        private void enterBtn_Click(object sender, EventArgs e)
+        {
+            if (enterMode)
+            {
+                real = int.Parse(realShardsTxt.Text);
+                if (goal >= real)
+                {
+                    whatTypeLabel.Text = "You already have enough.";
+                    enterBtn.Enabled = false;
+                    realShardsTxt.Enabled = false;
+                }
+                else
+                {
+
+                }
+            }
         }
     }
 }

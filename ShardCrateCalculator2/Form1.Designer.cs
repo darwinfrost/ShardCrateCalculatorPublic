@@ -113,6 +113,7 @@
             this.enterBtn.TabIndex = 7;
             this.enterBtn.Text = "Enter";
             this.enterBtn.UseVisualStyleBackColor = true;
+            this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // exitBtn
             // 
@@ -245,33 +246,36 @@
             this.luckyNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckyNumLbl.AutoSize = true;
             this.luckyNumLbl.Enabled = false;
-            this.luckyNumLbl.Location = new System.Drawing.Point(265, 150);
+            this.luckyNumLbl.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.luckyNumLbl.Location = new System.Drawing.Point(242, 123);
             this.luckyNumLbl.Name = "luckyNumLbl";
-            this.luckyNumLbl.Size = new System.Drawing.Size(44, 16);
+            this.luckyNumLbl.Size = new System.Drawing.Size(61, 71);
             this.luckyNumLbl.TabIndex = 16;
-            this.luckyNumLbl.Text = "label1";
+            this.luckyNumLbl.Text = "0";
             // 
             // midNumLbl
             // 
             this.midNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.midNumLbl.AutoSize = true;
             this.midNumLbl.Enabled = false;
-            this.midNumLbl.Location = new System.Drawing.Point(265, 255);
+            this.midNumLbl.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.midNumLbl.Location = new System.Drawing.Point(242, 229);
             this.midNumLbl.Name = "midNumLbl";
-            this.midNumLbl.Size = new System.Drawing.Size(44, 16);
+            this.midNumLbl.Size = new System.Drawing.Size(61, 71);
             this.midNumLbl.TabIndex = 17;
-            this.midNumLbl.Text = "label2";
+            this.midNumLbl.Text = "0";
             // 
             // unluckyNumLbl
             // 
             this.unluckyNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.unluckyNumLbl.AutoSize = true;
             this.unluckyNumLbl.Enabled = false;
-            this.unluckyNumLbl.Location = new System.Drawing.Point(265, 364);
+            this.unluckyNumLbl.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.unluckyNumLbl.Location = new System.Drawing.Point(242, 342);
             this.unluckyNumLbl.Name = "unluckyNumLbl";
-            this.unluckyNumLbl.Size = new System.Drawing.Size(44, 16);
+            this.unluckyNumLbl.Size = new System.Drawing.Size(61, 71);
             this.unluckyNumLbl.TabIndex = 18;
-            this.unluckyNumLbl.Text = "label3";
+            this.unluckyNumLbl.Text = "0";
             // 
             // Form1
             // 
