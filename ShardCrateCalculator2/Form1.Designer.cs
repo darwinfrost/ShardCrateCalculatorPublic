@@ -170,6 +170,7 @@
             // 
             // unluckyPic
             // 
+            this.unluckyPic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.unluckyPic.Enabled = false;
             this.unluckyPic.Image = global::ShardCrateCalculator2.Properties.Resources.EgocrateWithX;
             this.unluckyPic.Location = new System.Drawing.Point(109, 323);
@@ -181,6 +182,7 @@
             // 
             // midPic
             // 
+            this.midPic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.midPic.Enabled = false;
             this.midPic.Image = global::ShardCrateCalculator2.Properties.Resources.EgocrateWithX;
             this.midPic.Location = new System.Drawing.Point(109, 211);
@@ -192,6 +194,7 @@
             // 
             // luckyPic
             // 
+            this.luckyPic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckyPic.Enabled = false;
             this.luckyPic.Image = global::ShardCrateCalculator2.Properties.Resources.EgocrateWithX;
             this.luckyPic.Location = new System.Drawing.Point(109, 110);
@@ -211,6 +214,7 @@
             this.threeStarPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.threeStarPic.TabIndex = 6;
             this.threeStarPic.TabStop = false;
+            this.threeStarPic.Click += new System.EventHandler(this.threeStarPic_Click);
             // 
             // twoStarPic
             // 
@@ -222,6 +226,7 @@
             this.twoStarPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.twoStarPic.TabIndex = 5;
             this.twoStarPic.TabStop = false;
+            this.twoStarPic.Click += new System.EventHandler(this.twoStarPic_Click);
             // 
             // uptiePic
             // 
@@ -233,11 +238,14 @@
             this.uptiePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.uptiePic.TabIndex = 4;
             this.uptiePic.TabStop = false;
+            this.uptiePic.Click += new System.EventHandler(this.uptiePic_Click);
             // 
             // luckyNumLbl
             // 
+            this.luckyNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckyNumLbl.AutoSize = true;
-            this.luckyNumLbl.Location = new System.Drawing.Point(279, 132);
+            this.luckyNumLbl.Enabled = false;
+            this.luckyNumLbl.Location = new System.Drawing.Point(265, 150);
             this.luckyNumLbl.Name = "luckyNumLbl";
             this.luckyNumLbl.Size = new System.Drawing.Size(44, 16);
             this.luckyNumLbl.TabIndex = 16;
@@ -245,8 +253,10 @@
             // 
             // midNumLbl
             // 
+            this.midNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.midNumLbl.AutoSize = true;
-            this.midNumLbl.Location = new System.Drawing.Point(287, 254);
+            this.midNumLbl.Enabled = false;
+            this.midNumLbl.Location = new System.Drawing.Point(265, 255);
             this.midNumLbl.Name = "midNumLbl";
             this.midNumLbl.Size = new System.Drawing.Size(44, 16);
             this.midNumLbl.TabIndex = 17;
@@ -254,8 +264,10 @@
             // 
             // unluckyNumLbl
             // 
+            this.unluckyNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.unluckyNumLbl.AutoSize = true;
-            this.unluckyNumLbl.Location = new System.Drawing.Point(287, 364);
+            this.unluckyNumLbl.Enabled = false;
+            this.unluckyNumLbl.Location = new System.Drawing.Point(265, 364);
             this.unluckyNumLbl.Name = "unluckyNumLbl";
             this.unluckyNumLbl.Size = new System.Drawing.Size(44, 16);
             this.unluckyNumLbl.TabIndex = 18;
