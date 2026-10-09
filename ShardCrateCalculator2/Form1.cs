@@ -23,24 +23,24 @@ namespace ShardCrateCalculator2
             goal = mode;
                     whatTypeLabel.Text = "How many shards do you have?";
                     enterBtn.Text = "Enter";
-                    uptieLbl.Enabled = false;
-                    uptiePic.Enabled = false;
-                    twoStarLbl.Enabled = false;
-                    twoStarPic.Enabled = false;
-                    threeStarLbl.Enabled = false;
-                    threeStarPic.Enabled = false;
-                    luckyLbl.Enabled = false;
-                    luckyNumLbl.Enabled = false;
-                    luckyPic.Enabled = false;
-                    midLbl.Enabled = false;
-                    midNumLbl.Enabled = false;
-                    midPic.Enabled = false;
-                    unluckyLbl.Enabled = false;
-                    unluckyNumLbl.Enabled = false;
-                    unluckyPic.Enabled = false;
-                    enterBtn.Enabled = true;
-                    exitBtn.Enabled = true;
-                    realShardsTxt.Enabled = true;
+            uptieLbl.Hide();
+            uptiePic.Hide();
+            twoStarLbl.Hide();
+            twoStarPic.Hide();
+            threeStarLbl.Hide();
+            threeStarPic.Hide();
+            luckyLbl.Hide();
+            luckyNumLbl.Hide();
+            luckyPic.Hide();
+            midLbl.Hide();
+            midNumLbl.Hide();
+            midPic.Hide();
+            unluckyLbl.Hide();
+            unluckyNumLbl.Hide();
+            unluckyPic.Hide();
+            enterBtn.Show();
+            exitBtn.Show();
+            realShardsTxt.Show();
                     enterMode = true;
             
         }
@@ -48,24 +48,24 @@ namespace ShardCrateCalculator2
         private void exitBtn_Click(object sender, EventArgs e)
         {
             whatTypeLabel.Text = "What are you sharding?";
-            luckyLbl.Enabled = false;
-            luckyNumLbl.Enabled = false;
-            luckyPic.Enabled = false;
-            midLbl.Enabled = false;
-            midNumLbl.Enabled = false;
-            midPic.Enabled = false;
-            unluckyLbl.Enabled = false;
-            unluckyNumLbl.Enabled = false;
-            unluckyPic.Enabled = false;
-            enterBtn.Enabled = false;
-            exitBtn.Enabled = false;
-            realShardsTxt.Enabled = false;
-            uptieLbl.Enabled = true;
-            uptiePic.Enabled = true;
-            twoStarLbl.Enabled = true;
-            twoStarPic.Enabled = true;
-            threeStarLbl.Enabled = true;
-            threeStarPic.Enabled = true;
+            luckyLbl.Hide();
+            luckyNumLbl.Hide();
+            luckyPic.Hide();
+            midLbl.Hide();
+            midNumLbl.Hide();
+            midPic.Hide();
+            unluckyLbl.Hide();
+            unluckyNumLbl.Hide();
+            unluckyPic.Hide();
+            enterBtn.Hide();
+            exitBtn.Hide();
+            realShardsTxt.Hide();
+            uptieLbl.Show();
+            uptiePic.Show();
+            twoStarLbl.Show();
+            twoStarPic.Show();
+            threeStarLbl.Show();
+            threeStarPic.Show();
         }
 
         private void threeStarPic_Click(object sender, EventArgs e)
@@ -88,11 +88,11 @@ namespace ShardCrateCalculator2
             if (enterMode)
             {
                 real = int.Parse(realShardsTxt.Text);
-                if (goal >= real)
+                if (goal <= real)
                 {
                     whatTypeLabel.Text = "You already have enough.";
-                    enterBtn.Enabled = false;
-                    realShardsTxt.Enabled = false;
+                    enterBtn.Hide();
+                    realShardsTxt.Hide();
                 }
                 else
                 {
@@ -100,16 +100,16 @@ namespace ShardCrateCalculator2
                     enterMode = false;
                     enterBtn.Text = "Continue";
                     whatTypeLabel.Text = "Press Continue to open more";
-                    realShardsTxt.Enabled = false;
-                    luckyLbl.Enabled = true;
-                    luckyNumLbl.Enabled = true;
-                    luckyPic.Enabled = true;
-                    midLbl.Enabled = true;
-                    midNumLbl.Enabled = true;
-                    midPic.Enabled = true;
-                    unluckyLbl.Enabled = true;
-                    unluckyNumLbl.Enabled = true;
-                    unluckyPic.Enabled = true;
+                    realShardsTxt.Hide();
+                    luckyLbl.Show();
+                    luckyNumLbl.Show();
+                    luckyPic.Show() ;
+                     midLbl.Show();
+                    midNumLbl.Show();
+                    midPic.Show();
+                    unluckyLbl.Show();
+                    unluckyNumLbl.Show();
+                    unluckyPic.Show();
                     open = goal - real;
                     unluckyNumLbl.Text = open.ToString();
                     open = (goal - real) / 2;

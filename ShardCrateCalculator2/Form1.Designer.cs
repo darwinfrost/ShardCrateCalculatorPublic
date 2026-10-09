@@ -106,74 +106,73 @@
             // enterBtn
             // 
             this.enterBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.enterBtn.Enabled = false;
-            this.enterBtn.Location = new System.Drawing.Point(574, 229);
+            this.enterBtn.Location = new System.Drawing.Point(555, 229);
             this.enterBtn.Name = "enterBtn";
-            this.enterBtn.Size = new System.Drawing.Size(75, 23);
+            this.enterBtn.Size = new System.Drawing.Size(94, 23);
             this.enterBtn.TabIndex = 7;
             this.enterBtn.Text = "Enter";
             this.enterBtn.UseVisualStyleBackColor = true;
+            this.enterBtn.Visible = false;
             this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // exitBtn
             // 
             this.exitBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.exitBtn.Enabled = false;
-            this.exitBtn.Location = new System.Drawing.Point(574, 278);
+            this.exitBtn.Location = new System.Drawing.Point(564, 277);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(75, 23);
             this.exitBtn.TabIndex = 8;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Visible = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // realShardsTxt
             // 
             this.realShardsTxt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.realShardsTxt.Enabled = false;
             this.realShardsTxt.Location = new System.Drawing.Point(672, 229);
             this.realShardsTxt.Mask = "99999";
             this.realShardsTxt.Name = "realShardsTxt";
             this.realShardsTxt.Size = new System.Drawing.Size(63, 22);
             this.realShardsTxt.TabIndex = 9;
+            this.realShardsTxt.Visible = false;
             // 
             // luckyLbl
             // 
             this.luckyLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckyLbl.AutoSize = true;
-            this.luckyLbl.Enabled = false;
             this.luckyLbl.Location = new System.Drawing.Point(39, 150);
             this.luckyLbl.Name = "luckyLbl";
             this.luckyLbl.Size = new System.Drawing.Size(42, 16);
             this.luckyLbl.TabIndex = 10;
             this.luckyLbl.Text = "Lucky";
+            this.luckyLbl.Visible = false;
             // 
             // midLbl
             // 
             this.midLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.midLbl.AutoSize = true;
-            this.midLbl.Enabled = false;
             this.midLbl.Location = new System.Drawing.Point(39, 255);
             this.midLbl.Name = "midLbl";
             this.midLbl.Size = new System.Drawing.Size(29, 16);
             this.midLbl.TabIndex = 11;
             this.midLbl.Text = "Mid";
+            this.midLbl.Visible = false;
             // 
             // unluckyLbl
             // 
             this.unluckyLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.unluckyLbl.AutoSize = true;
-            this.unluckyLbl.Enabled = false;
             this.unluckyLbl.Location = new System.Drawing.Point(39, 364);
             this.unluckyLbl.Name = "unluckyLbl";
             this.unluckyLbl.Size = new System.Drawing.Size(55, 16);
             this.unluckyLbl.TabIndex = 12;
             this.unluckyLbl.Text = "Unlucky";
+            this.unluckyLbl.Visible = false;
             // 
             // unluckyPic
             // 
             this.unluckyPic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.unluckyPic.Enabled = false;
             this.unluckyPic.Image = global::ShardCrateCalculator2.Properties.Resources.EgocrateWithX;
             this.unluckyPic.Location = new System.Drawing.Point(109, 323);
             this.unluckyPic.Name = "unluckyPic";
@@ -181,11 +180,11 @@
             this.unluckyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.unluckyPic.TabIndex = 15;
             this.unluckyPic.TabStop = false;
+            this.unluckyPic.Visible = false;
             // 
             // midPic
             // 
             this.midPic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.midPic.Enabled = false;
             this.midPic.Image = global::ShardCrateCalculator2.Properties.Resources.EgocrateWithX;
             this.midPic.Location = new System.Drawing.Point(109, 211);
             this.midPic.Name = "midPic";
@@ -193,11 +192,11 @@
             this.midPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.midPic.TabIndex = 14;
             this.midPic.TabStop = false;
+            this.midPic.Visible = false;
             // 
             // luckyPic
             // 
             this.luckyPic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.luckyPic.Enabled = false;
             this.luckyPic.Image = global::ShardCrateCalculator2.Properties.Resources.EgocrateWithX;
             this.luckyPic.Location = new System.Drawing.Point(109, 110);
             this.luckyPic.Name = "luckyPic";
@@ -205,6 +204,7 @@
             this.luckyPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.luckyPic.TabIndex = 13;
             this.luckyPic.TabStop = false;
+            this.luckyPic.Visible = false;
             // 
             // threeStarPic
             // 
@@ -246,37 +246,37 @@
             // 
             this.luckyNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckyNumLbl.AutoSize = true;
-            this.luckyNumLbl.Enabled = false;
             this.luckyNumLbl.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.luckyNumLbl.Location = new System.Drawing.Point(242, 123);
             this.luckyNumLbl.Name = "luckyNumLbl";
             this.luckyNumLbl.Size = new System.Drawing.Size(61, 71);
             this.luckyNumLbl.TabIndex = 16;
             this.luckyNumLbl.Text = "0";
+            this.luckyNumLbl.Visible = false;
             // 
             // midNumLbl
             // 
             this.midNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.midNumLbl.AutoSize = true;
-            this.midNumLbl.Enabled = false;
             this.midNumLbl.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.midNumLbl.Location = new System.Drawing.Point(242, 229);
             this.midNumLbl.Name = "midNumLbl";
             this.midNumLbl.Size = new System.Drawing.Size(61, 71);
             this.midNumLbl.TabIndex = 17;
             this.midNumLbl.Text = "0";
+            this.midNumLbl.Visible = false;
             // 
             // unluckyNumLbl
             // 
             this.unluckyNumLbl.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.unluckyNumLbl.AutoSize = true;
-            this.unluckyNumLbl.Enabled = false;
             this.unluckyNumLbl.Font = new System.Drawing.Font("Old English Text MT", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unluckyNumLbl.Location = new System.Drawing.Point(242, 342);
             this.unluckyNumLbl.Name = "unluckyNumLbl";
             this.unluckyNumLbl.Size = new System.Drawing.Size(61, 71);
             this.unluckyNumLbl.TabIndex = 18;
             this.unluckyNumLbl.Text = "0";
+            this.unluckyNumLbl.Visible = false;
             // 
             // Form1
             // 
